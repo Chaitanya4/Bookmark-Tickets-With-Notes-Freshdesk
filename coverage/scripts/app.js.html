@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for scripts/app.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">scripts/</a> app.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">95.83% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>69/72</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">78.13% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>25/32</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">86.96% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>20/23</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">95.59% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>65/68</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">40×</span>
+<span class="cline-any cline-yes">40×</span>
+<span class="cline-any cline-yes">40×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">38×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">83×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">83×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">83×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">120×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">46×</span>
+<span class="cline-any cline-yes">46×</span>
+<span class="cline-any cline-yes">46×</span>
+<span class="cline-any cline-yes">184×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">46×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">66×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">82×</span>
+<span class="cline-any cline-yes">83×</span>
+<span class="cline-any cline-yes">78×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">63×</span>
+<span class="cline-any cline-yes">46×</span>
+<span class="cline-any cline-yes">43×</span>
+<span class="cline-any cline-yes">43×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">37×</span>
+<span class="cline-any cline-yes">37×</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">66×</span>
+<span class="cline-any cline-yes">66×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">113×</span>
+<span class="cline-any cline-yes">118×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">132×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">113×</span>
+<span class="cline-any cline-yes">137×</span>
+<span class="cline-any cline-yes">132×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">79×</span>
+<span class="cline-any cline-yes">98×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">64×</span>
+<span class="cline-any cline-yes">64×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">93×</span>
+<span class="cline-any cline-yes">93×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">52×</span>
+<span class="cline-any cline-yes">52×</span>
+<span class="cline-any cline-yes">26×</span>
+<span class="cline-any cline-yes">25×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">39×</span>
+<span class="cline-any cline-yes">36×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">36×</span>
+<span class="cline-any cline-yes">36×</span>
+<span class="cline-any cline-yes">36×</span>
+<span class="cline-any cline-yes">36×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">36×</span>
+<span class="cline-any cline-yes">36×</span>
+<span class="cline-any cline-yes">36×</span>
+<span class="cline-any cline-yes">37×</span>
+<span class="cline-any cline-yes">35×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">36×</span>
+<span class="cline-any cline-yes">49×</span>
+<span class="cline-any cline-yes">50×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">38×</span>
+<span class="cline-any cline-yes">46×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">33×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">37×</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-yes">17×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+var i=0;
+document.addEventListener("DOMContentLoaded", function () {
+  let ticketId = '', userId = '', tickets = [], currentTicketObj = {}, domainName = '';
+&nbsp;
+  function renderApp() {
+    return Promise.all([client.data.get('loggedInUser'), client.data.get('ticket'), client.data.get('domainName')]);
+  }
+&nbsp;
+  // Saves the changes to the db
+  function setBookmarks() {
+  
+    client.db.set("ticket_bookmarks:" + userId,{tickets:tickets})
+      .then(null, function (error) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >        client.interface.trigger("showNotify", {</span>
+          type: "danger",
+          title: "Error",
+          message: "Changes could not be saved. Please try again."
+        });
+<span class="cstat-no" title="statement not covered" >        console.log(error);</span>
+      }).finally(function () {
+      displayBookmarks();
+    });
+    console.log(tickets);
+  }
+&nbsp;
+  // Gets the bookmarks from the db
+  function getBookmarks() {
+    return client.db.get("ticket_bookmarks:" + userId);
+  }
+&nbsp;
+  // Picks specific keys from the object
+  function pickKeysFromObj(ticketObj) {
+    let arr = ['id', 'subject', 'description_text','notes'];
+    let trimmedObj = {};
+    arr.forEach(function (val) {
+      trimmedObj[val] = ticketObj[val];
+    });
+    if(document.getElementById('note').value == '')
+    {
+      trimmedObj['notes']="No personal note was added for this ticket.";
+    }
+    else{
+      trimmedObj['notes']=document.getElementById('note').value;
+    }
+    
+    return trimmedObj;
+  }
+&nbsp;
+  // Updates the tickets array
+  function changeBookmarks(type, ticketObj) {
+    getBookmarks().then(function (result) {
+      let index = (result.tickets || []).map(function (ticket) {
+        return ticket.id;
+      }).indexOf(ticketObj.id);
+      if (type === 'add') {
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (index &lt; 0) {
+          tickets.push(pickKeysFromObj(currentTicketObj));
+          setBookmarks();
+        }
+      } else <span class="missing-if-branch" title="else path not taken" >E</span>if (type === 'remove') {
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (index &gt; -1) {
+          tickets.splice(index, 1);
+          setBookmarks();
+        }
+      }
+    }, function (error) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      if (error.status === 404 &amp;&amp; type === 'add') {</span>
+        tickets = [pickKeysFromObj(currentTicketObj)];
+        setBookmarks();
+      }
+    });
+  }
+&nbsp;
+  //Displays the updated the list in the UI
+  function displayBookmarks() {
+    let bookmark = document.getElementsByClassName('bookmarks-ul')[0];
+    bookmark.innerHTML = '';
+&nbsp;
+    function setTemplate({id, domainName, subject}) {
+      return `&lt;li class="bookmarks-li"&gt;&lt;b&gt;&lt;a href="https://${domainName}/a/tickets/${id}" target="_blank" class="bookmark-link"&gt;${subject}&lt;/a&gt;&lt;/b&gt;&lt;/li&gt;`;
+    }
+    tickets.forEach(function (val) {
+      val.domainName = domainName;
+      bookmark.innerHTML += setTemplate(val);
+    });
+&nbsp;
+    if (tickets.find(function (val) {
+      return val.id === ticketId;
+    })) {
+      document.getElementById('add_to_bookmarks').disabled = true;
+      document.getElementById('note').style.display="none";
+    } else {
+      document.getElementById('add_to_bookmarks').disabled = false;
+      document.getElementById('note').style.display="block";
+    }
+&nbsp;
+    let bookmarksList = document.getElementsByClassName('bookmarks-li');
+    if (bookmarksList &gt; 0) {
+      bookmarksList.forEach(function (index, el) <span class="fstat-no" title="function not covered" >{</span>
+        $clamp(el, {clamp: 2});
+      });
+    }
+  }
+&nbsp;
+  app.initialized().then(function (client) {
+    window.client = client;
+&nbsp;
+    renderApp().then(function (value) {
+      userId = value[0].loggedInUser.id;
+      ticketId = value[1].ticket.id;
+      domainName = value[2].domainName;
+&nbsp;
+      currentTicketObj = value[1].ticket;
+      if (userId &amp;&amp; ticketId) {
+        getBookmarks().then(function (records) {
+          tickets = records.tickets || <span class="branch-1 cbranch-no" title="branch not covered" >[];</span>
+          displayBookmarks();
+        });
+      }
+    });
+&nbsp;
+    document.getElementById('add_to_bookmarks').addEventListener('click', function () {
+      if (userId &amp;&amp; ticketId) {
+        changeBookmarks('add', currentTicketObj);
+      }
+    });
+&nbsp;
+    document.getElementById('manage_bookmarks').addEventListener('click', function () {
+      client.interface.trigger("showModal", {
+        title: "Manage Bookmarked Tickets",
+        template: "views/modal.html",
+        data: {
+          tickets: tickets,
+          userId: userId
+        }
+      });
+    });
+    
+    client.instance.receive(
+      function (event) {
+        let data = event.helper.getData();
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (data.message.type === 'removeTicket') {
+          changeBookmarks('remove', {id: data.message.ticketId});
+        }
+      }
+    );
+  });
+});</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Nov 04 2021 17:07:24 GMT+0530 (India Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

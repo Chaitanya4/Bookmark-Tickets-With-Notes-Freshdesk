@@ -1,0 +1,75 @@
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(66, 66, 66);
+  text-decoration: underline;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(106, 106, 119);
+  text-decoration: underline;
+}
+
+.remove-bookmark{
+  width: 1.2rem;
+  display: inline-block;
+  cursor: pointer;
+}
+.bookmarks-ul, .manage-bm-ul{
+  list-style-type: none;
+  padding-left: 0;
+  
+}
+.manage-bm-li, .bookmarks-li{
+  padding: 10px 0px;
+  border-bottom: 0.4px #d8dadb solid;
+  list-style-type: none;
+}
+
+.manage-bm-li .ticket-title{
+  width: 60%;
+  padding-right: 1rem;
+  float: left;
+}
+.remove-ticket-bm{
+  width: 30%;
+  float:right;
+}
+.bookmarks-li:last-child {
+  border-bottom: none;
+}
+
+.add-btn-container{
+  width: 75%;
+  float: left;
+}
+
+
+.edit-btn-container{
+  width: 10%;
+  float: right;
+}
+
+#add_to_bookmarks{
+  width: 100%;
+}
+
+#manage_bookmarks {
+  padding: 0.625rem 0.75rem;
+  min-width: auto;
+  float: right;
+}
+
+.add-btn-container .btn-primary[disabled], .add-btn-container .btn-primary[disabled]:hover {
+  cursor: not-allowed;
+  transition: .1s linear;
+  background-color: #bab9bd;
+  border: 1px solid #b3b0bb;
+  color: #6f757c;
+}
